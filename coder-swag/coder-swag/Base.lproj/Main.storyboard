@@ -29,7 +29,7 @@
                                 <rect key="frame" x="0.0" y="62" width="414" height="746"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="217" id="D3x-mu-Pib" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="217" id="D3x-mu-Pib" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="217"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D3x-mu-Pib" id="N0I-Ye-clS">
@@ -37,7 +37,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hoodies" translatesAutoresizingMaskIntoConstraints="NO" id="Fol-k5-NZf">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="217"/>
+                                                    <rect key="frame" x="0.0" y="3" width="414" height="211"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="220" id="BDc-ZR-TUA"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdI-DM-PTl">
                                                     <rect key="frame" x="79.5" y="95.5" width="255" height="26"/>
@@ -54,9 +57,9 @@
                                                 <constraint firstItem="PdI-DM-PTl" firstAttribute="centerX" secondItem="N0I-Ye-clS" secondAttribute="centerX" id="13t-44-g2t"/>
                                                 <constraint firstItem="PdI-DM-PTl" firstAttribute="centerY" secondItem="N0I-Ye-clS" secondAttribute="centerY" id="LCq-EW-Ig4"/>
                                                 <constraint firstItem="Fol-k5-NZf" firstAttribute="leading" secondItem="N0I-Ye-clS" secondAttribute="leading" id="Vkj-RV-CzA"/>
-                                                <constraint firstAttribute="bottom" secondItem="Fol-k5-NZf" secondAttribute="bottom" id="aLO-xM-De9"/>
+                                                <constraint firstAttribute="bottom" secondItem="Fol-k5-NZf" secondAttribute="bottom" constant="3" id="aLO-xM-De9"/>
                                                 <constraint firstAttribute="trailing" secondItem="Fol-k5-NZf" secondAttribute="trailing" id="cyR-j1-OK5"/>
-                                                <constraint firstItem="Fol-k5-NZf" firstAttribute="top" secondItem="N0I-Ye-clS" secondAttribute="top" id="he2-f0-MAQ"/>
+                                                <constraint firstItem="Fol-k5-NZf" firstAttribute="top" secondItem="N0I-Ye-clS" secondAttribute="top" constant="3" id="he2-f0-MAQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
