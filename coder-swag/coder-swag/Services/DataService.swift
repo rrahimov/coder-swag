@@ -24,7 +24,7 @@ class DataService {
     }
     
     //function to pass title and get relevant array
-    func getProducts(forProduct title: String) -> [Product] {
+    func getProducts(forCategoryTitle title: String) -> [Product] {
         switch title {
         case "SHIRTS":
             return getShirts()
